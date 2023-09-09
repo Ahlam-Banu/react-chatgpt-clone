@@ -1,16 +1,29 @@
 const App = () => {
   return (
     <div className="app">
-      <section className="sidebar">
+      <section className="side-bar">
         <button>+ New Chat</button>
         {/* Going to add a Button next to 'New Chat' button to toggle the sidebar */}
-        <ul className="history"></ul>
-        <nav> {/* <nav> is used to semantically mark up navigation menus, which can include links to various pages or sections of the website.
-It is often placed in the header or footer of a webpage to provide navigation options for users. */}
+        <ul className="history">Previous Chats</ul>
+        <nav>
           <p>Made by Ahlam</p>
         </nav>
       </section>
-      <section className="main"></section>
+      <section className="main">
+        <h1>AhlamGPT</h1>
+        <ul className="feed">
+
+        </ul>
+        <div className="bottom-section">
+          <div className="input-container"> {/* this <div> will be used to contain input elements */}
+            <input placeholder="Send a message"/>
+            <div id = "submit">➔</div>
+          </div>
+          <p className="info">
+          Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
