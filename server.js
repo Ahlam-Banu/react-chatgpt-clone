@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const API_KEY = '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';
+const API_KEY = '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';
 
 app.post("/completions", async (req, res) => {
   const options = {
@@ -29,3 +29,5 @@ app.post("/completions", async (req, res) => {
     res.status(500).send("Error processing your request");
   }
 })
+
+app.listen(PORT, () => console.log('Server running at PORT '+ PORT))
